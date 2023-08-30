@@ -59,18 +59,10 @@ This sample demonstrates an ASP.NET Core web app that calls the Microsoft Graph 
 From your shell or command line:
 
 ```console
-    git clone https://github.com/Azure-Samples/active-directory-aspnetcore-webapp-openidconnect-v2.git
+    git clone https://github.com/Soucheff/DOTNET-SAMPLE-WEB.git
 ```
 
 or download and extract the repository .zip file.
-
-> :warning: To avoid path length limitations on Windows, we recommend cloning into a directory near the root of your drive.
-
-Go to the `"2-WebApp-graph-user\2-1-Call-MSGraph"` folder
-
- ```Sh
-  cd "2-WebApp-graph-user\2-1-Call-MSGraph"
-  ```
 
 > Developers who wish to increase their familiarity with programming for Microsoft Graph are advised to go through the [An introduction to Microsoft Graph for developers](https://www.youtube.com/watch?v=EBbnpFdB92A) recorded session.
 
@@ -85,35 +77,6 @@ Go to the `"2-WebApp-graph-user\2-1-Call-MSGraph"` folder
 There is one project in this sample. To register it, you can:
 
 - follow the steps below for manually register your apps
-- or use PowerShell scripts that:
-  - **automatically** creates the Azure AD applications and related objects (passwords, permissions, dependencies) for you.
-  - modify the projects' configuration files.
-
-<details>
-  <summary>Expand this section if you want to use this automation:</summary>
-
-> :warning: If you have never used **Azure AD Powershell** before, we recommend you go through the [App Creation Scripts](./AppCreationScripts/AppCreationScripts.md) once to ensure that your environment is prepared correctly for this step.
-
-1. On Windows, run PowerShell as **Administrator** and navigate to the folder that contains this readme file.
-1. If you have never used Azure AD Powershell before, we recommend you go through the [App Creation Scripts](./AppCreationScripts/AppCreationScripts.md) once to ensure that your environment is prepared correctly for this step.
-1. In PowerShell run:
-
-  ```PowerShell
-   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
-  ```
-
-1. Run the script to create your Azure AD application and configure the code of the sample application accordingly.
-1. In PowerShell run:
-
-  ```PowerShell
-   cd .\AppCreationScripts\
-   .\Configure.ps1
-  ```
-
-   > Other ways of running the scripts are described in [App Creation Scripts](./AppCreationScripts/AppCreationScripts.md)
-   > The scripts also provide a guide to automated application registration, configuration and removal which can help in your CI/CD scenarios.
-
-</details>
 
 #### Choose the Azure AD tenant where you want to create your applications
 
